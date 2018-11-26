@@ -930,8 +930,8 @@ block-stream@*:
     inherits "~2.0.0"
 
 "blockchain-ts@git+https://git@github.com/shinyoshiaki/blockchain-ts":
-  version "0.1.0"
-  resolved "git+https://git@github.com/shinyoshiaki/blockchain-ts#1e08a5ca43c2d02faf9fc182722bcffa402cde5b"
+  version "0.1.2"
+  resolved "git+https://git@github.com/shinyoshiaki/blockchain-ts#1004bc12a8fce9d605bb6fc5d44669dab87793eb"
   dependencies:
     "@liskhq/lisk-cryptography" "^1.1.2"
     "@types/ed2curve" "^0.2.2"
@@ -1746,11 +1746,6 @@ esprima@^4.0.1:
 esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
-
-events@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/events/-/events-3.0.0.tgz#9a0a0dfaf62893d92b875b8f2698ca4114973e88"
-  integrity sha512-Dc381HFWJzEOhQ+d8pkNon++bk9h6cdAoAj4iE6Q4y6xgTzySWXlKn05/TVNpjnfRqi/X0EpJEJohPjNI3zpVA==
 
 evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   version "1.0.3"
@@ -2567,13 +2562,12 @@ jsprim@^1.2.2:
     sha1 "^1.1.1"
 
 "kad-rtc@git+https://git@github.com/shinyoshiaki/kad-rtc":
-  version "0.1.0"
-  resolved "git+https://git@github.com/shinyoshiaki/kad-rtc#d73cd2302c64e934dfe2657e881e873a5a9cb520"
+  version "0.1.1"
+  resolved "git+https://git@github.com/shinyoshiaki/kad-rtc#06b313fbf435ada40d1402e5a49ea6bd1c29428b"
   dependencies:
     bson "^3.0.2"
     buffer "^5.2.1"
     buffer-to-arraybuffer "^0.0.5"
-    events "^3.0.0"
     inquirer "^6.2.0"
     kad-distance "git+https://git@github.com/shinyoshiaki/kad-distance.git"
     keypair "^1.0.1"

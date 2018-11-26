@@ -14,25 +14,32 @@ export default class Network {
     this.blockchain = new BlockChainApp({
       phrase,
       callback: {
-        listenConfilict: this.listenConflict,
-        answerConflict: this.answerConflict
+        listenConflict: rpc => {
+          this.listenConflict(rpc, this.broadcast);
+        },
+        answerConflict: rpc => {
+          this.answerConflict(rpc, this.broadcast);
+        }
       }
     });
 
     this.broadcast.events.broadcast["network.ts"] = network => {
       const json: RPC = JSON.parse(network);
+      console.log({ json });
       this.blockchain.responder.runRPC(json);
     };
   }
 
-  private listenConflict(rpc: RPC) {
+  private listenConflict(rpc: RPC, broadcast: Broadcast) {
     const str = JSON.stringify(rpc);
-    this.broadcast.broadcast(str);
+    //本来はブロードキャストするべきではない
+    broadcast.broadcast(str);
   }
 
-  private answerConflict(rpc: RPC) {
+  private answerConflict(rpc: RPC, broadcast: Broadcast) {
     const str = JSON.stringify(rpc);
-    this.broadcast.broadcast(str);
+    //本来はブロードキャストするべきではない
+    broadcast.broadcast(str);
   }
 
   transaction(recipent: string, amount: number, data: ITransactionData) {
