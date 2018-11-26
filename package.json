@@ -1,0 +1,25 @@
+{
+  "name": "babel-typescript-sample",
+  "version": "0.7.0",
+  "license": "MIT",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "typescript": "^3.1.5"
+  },
+  "dependencies": {
+    "blockchain-ts": "git+https://git@github.com/shinyoshiaki/blockchain-ts",
+    "kad-rtc": "git+https://git@github.com/shinyoshiaki/kad-rtc"
+  }
+}
