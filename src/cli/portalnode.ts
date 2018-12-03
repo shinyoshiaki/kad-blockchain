@@ -1,5 +1,8 @@
 import ConnectPotalnode from "../portalnode";
-import { ITransactionData } from "blockchain-ts/lib/blockchain/blockchain";
+import {
+  ITransactionData,
+  validChain
+} from "blockchain-ts/lib/blockchain/blockchain";
 import { ETransactionType } from "blockchain-ts/lib/blockchain/interface";
 
 const responce: { [key: string]: any } = {};
@@ -45,8 +48,10 @@ responce.balance = () => {
   console.log("now balance", node.blockchain.nowAmount());
 };
 
-responce.blockchain = () => {
-  console.log("now blockchain", node.blockchain.chain);
+responce.chain = () => {
+  if (validChain(node.blockchain.chain))
+    console.log("now blockchain", node.blockchain.chain);
+  else console.log("chain error");
 };
 
 responce.address = () => {

@@ -930,8 +930,8 @@ block-stream@*:
     inherits "~2.0.0"
 
 "blockchain-ts@git+https://git@github.com/shinyoshiaki/blockchain-ts":
-  version "0.1.2"
-  resolved "git+https://git@github.com/shinyoshiaki/blockchain-ts#1004bc12a8fce9d605bb6fc5d44669dab87793eb"
+  version "0.1.5"
+  resolved "git+https://git@github.com/shinyoshiaki/blockchain-ts#445102325909f4570b01c1e1b13d6a67aa488ad1"
   dependencies:
     "@liskhq/lisk-cryptography" "^1.1.2"
     "@types/ed2curve" "^0.2.2"
@@ -2562,8 +2562,8 @@ jsprim@^1.2.2:
     sha1 "^1.1.1"
 
 "kad-rtc@git+https://git@github.com/shinyoshiaki/kad-rtc":
-  version "0.1.1"
-  resolved "git+https://git@github.com/shinyoshiaki/kad-rtc#06b313fbf435ada40d1402e5a49ea6bd1c29428b"
+  version "0.1.4"
+  resolved "git+https://git@github.com/shinyoshiaki/kad-rtc#8a9f295ed6feb335be205a2bb431f5193f06b4e9"
   dependencies:
     bson "^3.0.2"
     buffer "^5.2.1"
@@ -4023,10 +4023,10 @@ tweetnacl@1.0.0, tweetnacl@^1.0.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.0.tgz#713d8b818da42068740bf68386d0479e66fc8a7b"
   integrity sha1-cT2LgY2kIGh0C/aDhtBHnmb8ins=
 
-typescript@^3.1.5:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.6.tgz#b6543a83cfc8c2befb3f4c8fba6896f5b0c9be68"
-  integrity sha512-tDMYfVtvpb96msS1lDX9MEdHrW4yOuZ4Kdc4Him9oU796XldPYF/t2+uKoX0BBa0hXXwDlqYQbXY5Rzjzc5hBA==
+typescript@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.1.tgz#0b7a04b8cf3868188de914d9568bd030f0c56192"
+  integrity sha512-jw7P2z/h6aPT4AENXDGjcfHTu5CSqzsbZc6YlUIebTyBAq8XaKp78x7VcSh30xwSCcsu5irZkYZUSFP1MrAMbg==
 
 uid-number@^0.0.6:
   version "0.0.6"
